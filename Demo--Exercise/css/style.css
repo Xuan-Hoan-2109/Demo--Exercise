@@ -92,7 +92,7 @@ ul {
     opacity: 0;
 }
 .dropdown:hover .dropdown--item {
-    bottom: -115%;
+    bottom: -114.5%;
     opacity: 1;
 }
 .dd-link {
@@ -109,21 +109,25 @@ ul {
 .log-btn {
     padding: 0 0 0 20px;
 }
-.btn{
+.btn {
     display: inline-block;
-    position: relative;
     background-color: red;
     padding: 15px 35px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 0;
+    border-radius: 6px;
+}
+.btn-hover{
+    position: relative;
     font-size: 14px;
     text-transform: uppercase;
-    border-radius: 6px;
     transition: all 0.5s ease;
     overflow: hidden;
-    margin: 0;
-    cursor: pointer;
     z-index: 1;
 }
-.btn::before {
+
+.btn-hover::before {
     content: "";
     position: absolute;
     background-color: #e0581e;
@@ -135,7 +139,7 @@ ul {
     transition: all 0.6s ease;
     z-index: -1;
 }
-.btn:hover::before {
+.btn-hover:hover::before {
     width: 100%;
     left: 0;
     color: #fff;

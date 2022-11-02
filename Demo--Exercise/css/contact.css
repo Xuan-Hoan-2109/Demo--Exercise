@@ -1,0 +1,86 @@
+.between__contact {
+    margin: 130px 0;
+}
+.log-100{
+    width: 100%;
+}
+.google__map {
+    margin-bottom: 65px;
+}
+.google__map iframe {
+    width: 100%;
+}
+.log-66{
+    width: 66.666667%;
+}
+.form-contact__title h2{
+    font-size: 25px;
+    text-transform: capitalize;
+    margin: 0 0 20px 0;
+}
+.form__input {
+    margin: 0 -15px 0 -15px;
+}
+.form__input .ip-1 {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.ip-control{
+    width: 100%;
+    outline: none;
+    border: 1px solid #e5e6e9;
+    border-radius: 0;
+    display: block;
+    padding: 15px 20px 15px 20px;
+    color: #495057;
+}
+.leftovers{
+    height: 50px;
+}
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+.margin-bottom-45 {
+    margin-bottom: 45px;
+}
+.f-btn{
+    border: 1px solid #f15f22;
+    background: transparent;
+    border-radius: 0;
+    font-size: 23px;
+    color: #f15f22;
+    padding: 24px 45px;
+    transition: all 0.4s ease-out;
+}
+.f-btn:hover {
+    background: #f15f22;
+    color: #fff;
+}
+.log-33{
+    width: 33.33333%;
+}
+.contact-info{
+    margin-left: 120px;
+}
+.info{
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    margin-bottom: 35px;
+}
+.info__icon{
+    font-size: 26px;
+    color: #8f9195;
+    margin-right: 20px;
+}
+.ti-home{
+    display: block;
+}
+.info__text h3 {
+    margin: 0 0 5px 0;
+    font-size: 15px;
+}
+.info__text p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 2.5;
+}
