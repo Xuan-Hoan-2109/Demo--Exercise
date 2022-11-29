@@ -17,9 +17,9 @@
 <body>
     <div class="bin">
         <header>
-            <div class="header">
-                <div class="container">
-                    <div class="wrap header__social">
+            <div class="header pdtb-15">
+                <div class="container wrap jc-sb">
+                    <div class="wrap header__social w-100">
                         <div class="wrap header__social--phone log-2">
                             <div class="header__social--phone-number">
                                 <p>Phone: +99 (0) 101 0000 888</p>
@@ -37,7 +37,7 @@
                             </ul>  
                         </div>
                     </div>
-                    <div class="wrap align-items--center">
+                    <div class="wrap align-items--center jc-sb w-100">
                         <div class="logo">
                             <a href="#">
                                 <img src="img/logo.png" alt="">
@@ -71,30 +71,90 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- menu__tablet mobile -->
+                    <div class="header__dropdown">
+                        <a href="#" class="ic-open">
+                            <div class="header__straight-line">
+                                <span class="straight-line"></span>
+                                <span class="straight-line"></span>
+                                <span class="straight-line"></span>
+                            </div>
+                        </a>
+                        <a href="#" class="ic-close"></a>
+                        <div class="dropdown__menu">
+                            <ul class="dropdown__menu--element">
+                                <div class="element--title">
+                                    <div class="container">
+                                        <div class="wrap align-items--center pdtb-15">
+                                            <div class="logo lg-mbl">
+                                                <img src="img/logo.png" alt="">
+                                            </div>
+                                            <h2>Đăng Nhập</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="element--father">
+                                    <div class="element--child one">
+                                        <li>
+                                            <a href="index.html" class="link tm-link">
+                                                Trang Chủ
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="service.html" class="link tm-link">
+                                                Dịch Vụ
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="posts.html" class="link tm-link">
+                                                Bài Viết
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="contact.html" class="link tm-link">
+                                                Liên Hệ
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="element--child two">
+                                        <li>
+                                            <a href="log-in.html" class="link tm-link">Đăng Nhập</a>
+                                        </li>
+                                        <li>
+                                            <a href="register.html" class="link tm-link">Đăng Ký Tài Khoản</a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
         <main>
-            <div class="between">
-                <div class="between__log-in">
-                    <div class="log-100 log-in__text">
-                        <h2>Đăng nhập</h2>
+            <div class="between mgt-100">
+                <div class="between__log-in mw-990-100">
+                    <div class="container">
+                        <div class="log-100 log-in__text">
+                            <h2>Đăng nhập</h2>
+                        </div>
+                        <form action="#" class="log-in mw-990-100" autocomplete="on">
+                            <div class="user-name fr-1">
+                                <label class="lb-text" for="user-name">Tên Đăng Nhập</label>
+                                <input class="ip-text" type="text" name="user-name" placeholder="Tên Đăng Nhập" >
+                            </div>
+                            <div class="password fr-1">
+                                <label class="lb-text" for="passwrod">Password</label>
+                                <input class="ip-text" type="password" name="password" placeholder="Mật Khẩu">
+                            </div>
+                            <div class="save-password fr-1">
+                                <input class="ip-checkbox" type="checkbox" name="save-password" value="Lưu Mật Khẩu">
+                                <label class="lb-check" for="save-password">Lưu Mật Khẩu</label>
+                            </div>
+                            <button class="link btn btn-hover btn-form">Đăng Nhập Ngay</button>
+                        </form>
                     </div>
-                    <form action="#" class="log-in" autocomplete="on">
-                        <div class="user-name fr-1">
-                            <label class="lb-text" for="user-name">Tên Đăng Nhập</label>
-                            <input class="ip-text" type="text" name="user-name" placeholder="Tên Đăng Nhập" >
-                        </div>
-                        <div class="password fr-1">
-                            <label class="lb-text" for="passwrod">Password</label>
-                            <input class="ip-text" type="password" name="password" placeholder="Mật Khẩu">
-                        </div>
-                        <div class="save-password fr-1">
-                            <input class="ip-checkbox" type="checkbox" name="save-password" value="Lưu Mật Khẩu">
-                            <label class="lb-check" for="save-password">Lưu Mật Khẩu</label>
-                        </div>
-                        <button class="link btn btn-hover btn-form">Đăng Nhập Ngay</button>
-                    </form>
                 </div>
             </div>
         </main>

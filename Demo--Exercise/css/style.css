@@ -97,6 +97,7 @@ ul {
     box-shadow: 0 0 10px 2px #2a3f54;
     transition: all 0.5s ease-out;
     opacity: 0;
+    z-index: 10;
 }
 .dropdown:hover .dropdown--item {
     bottom: -114.5%;
@@ -342,7 +343,7 @@ ul {
     height: 60px;
     width: 100%;
     border-radius: 6px;
-
+    
 }
 .between-fout__from--input input {
     border: 1px solid #efebeb;
@@ -489,7 +490,44 @@ ul {
 .footer__title .ft-link {
     color: #e0581e;
 }
-@media (min-width: 830px) {
+@media (min-width:990.9px) {
+    .container {
+        max-width: 960px;
+    }
+    .w-100 {
+        width: 100%;
+    }
+    .between-fout__from {
+        padding:80px 40px;
+    }
+    .between-fout__from--input input {
+        padding: 10px 15px;
+    }
+
+    /* posts */
+   
+}
+@media (min-width: 1200px) {
+    .header {
+        position: relative !important;
+    }
+    .container {
+        max-width: 1200px;
+    }
+    .header__menu {
+        display: flex;
+    }
+    .header__dropdown {
+        display: none;
+    }
+    .between-fout__from {
+        padding:80px;
+    }
+    .between-fout__from--input input {
+        padding: 10px 30px;
+    }
+}
+@media (max-width: 990px) {
     .header {
         position: fixed !important;
         left: 0;
@@ -497,6 +535,9 @@ ul {
         width: 100%;
         background-color: #2a3f54;
         z-index: 100;
+    }
+    .header__social {
+        display: none;
     }
     .banner {
         margin: 100px 0 0 0;
@@ -513,21 +554,22 @@ ul {
     }
     .header__dropdown {
         display: block;
+        width: 50%;
+        position: relative;
+        height: 100%;
     }
     
     .ic-open,
     .ic-close {
         position: absolute;
         right: 0;
-        bottom: 50%;
-        transform: translateY(50%);
+        bottom: 30%;
     }
     .ic-open {
         z-index: 21;
     }
     .header__straight-line {
         position: relative;
-        width: 32px;
         height: 20px;
     }
     .straight-line{
@@ -565,7 +607,7 @@ ul {
         height: 100%;
     }
     .ic-close {
-        width: 25px;
+        width: 35px;
         height: 25px;
         opacity: 0;
     }
@@ -681,9 +723,10 @@ ul {
         width: 33.33333%;
         margin: 15px 0;
     }
-    .between-fout__from {
-        width: 100%;
+    .mw-990-100 {
+        width: 100% !important;
     }
+    
     .between-five {
         margin: 70px 0;
     }
@@ -691,7 +734,7 @@ ul {
         width: 100%;
         height: auto;
     }
-    .w-50 {
+    .mw-50 {
         max-width: 50%;
     }
     .work-time {
@@ -704,41 +747,36 @@ ul {
         margin-top: 50px;
         margin-bottom: 15px;
     }
+
+    /* posts */
+    .ln-1,
+    .ln-2 {
+        padding: 0 !important;
+    }
+    .mgt-100 {
+        margin-top: 100px;
+    }
+    .mgt-50 {
+        margin-top: 50px;
+    }
+
+    /* contact */
+    .log-22 {
+        max-width: 50%;
+    }
+    .contact-info {
+        margin: 50px 0 0 0 !important;
+    }
+    .mgt-30 {
+        margin-top: 30px;
+    }
 }
-@media (min-width: 990px) {
-    .header {
-        position: relative !important;
-    }
-    .container {
-        max-width: 960px;
-    }
-    .banner {
-        margin: 0;
-    }
-    .header__menu {
-        display: flex;
-    }
-    .header__dropdown {
-        display: none;
-    }
-}
-@media (min-width: 1200px) {
-    .header {
-        position: relative !important;
-    }
-    .container {
-        max-width: 1200px;
-    }
-    .header__menu {
-        display: flex;
-    }
-    .header__dropdown {
-        display: none;
-    }
+@media (max-width: 830px) {
+    
 }
 @media (max-width: 768px) {
     .container {
-        max-width: 700px;
+        max-width: 720px;
         margin: 0 auto;
     }
 
@@ -765,13 +803,22 @@ ul {
     .footer__logo {
         padding: 0 20px 0 0px;
     }
+
+}
+@media (max-width:575px) {
+    /* contact */
+    .log-2 {
+        max-width: 100% ;
+    }
+
+    /* log-in */
+    .log-in {
+        width: 100% !important;
+    }
 }
 @media (max-width:430px) {
     .container {
         max-width:none;
-    }
-    .logo {
-        width: 16%;
     }
     .logo img  {
         width: 45px;
@@ -783,6 +830,10 @@ ul {
     a.ic-open, a.ic-close {
         bottom: 20%;
         transform: translate(0);
+    }
+    .straight-line {
+        width: 20px;
+        height: 1.5px;
     }
     .element--title h2 {
         font-size: 20px;
@@ -811,13 +862,15 @@ ul {
     .between-five__title h2 {
         font-size: 23px;
     }
-    .w-100 {
+    .mw-100 {
         max-width: 100%;
     }
+    
     .log-4 {
         padding: 0 !important;
     }
     .thanhdang {
         margin-bottom: 30px;
     }
+
 }
